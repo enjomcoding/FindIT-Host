@@ -6,13 +6,6 @@
             "runtime": "vercel-php@0.7.4"
         }
     },
-    "build": {
-        "env": {
-            "VERCEL_PHP_EXTENSIONS": "zip"
-        },
-        "buildCommand": "composer install --no-dev && php artisan config:cache && php artisan route:cache && php artisan view:cache",
-        "outputDirectory": "public" 
-    },
     "routes": [
         {
             "src": "/(css|js|images|fonts|webfonts|storage|favicon.ico|robots.txt|manifest.webmanifest|manifest.json|.*\\..*)",
