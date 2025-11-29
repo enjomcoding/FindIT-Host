@@ -51,20 +51,19 @@
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan config:cache",
-            "@php artisan route:cache",
-            "@php artisan view:cache"
+            "php-cli artisan config:cache",
+            "php-cli artisan route:cache",
+            "php-cli artisan view:cache"
         ],
-
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "@php artisan config:cache",
-            "@php artisan route:cache",
-            "@php artisan view:cache"
+            "php-cli artisan config:cache",
+            "php-cli artisan route:cache",
+            "php-cli artisan view:cache"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
