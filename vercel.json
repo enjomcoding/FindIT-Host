@@ -21,12 +21,19 @@
       "dest": "/api/index.php"
     }
   ],
-  "buildCommand": "composer install --optimize-autoloader --no-dev && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan storage:link",
+  "buildCommand": "composer install --optimize-autoloader --no-dev",
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
     "CACHE_DRIVER": "array",
     "SESSION_DRIVER": "cookie",
-    "LOG_CHANNEL": "stderr"
+    "LOG_CHANNEL": "stderr",
+    "APP_KEY": "base64:Re3U44ILn6Eyif1vsHddYB0fDwgRFHq8N3fWLWQU2AA=",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "gateway01.ap-southeast-1.prod.aws.tidbcloud.com",
+    "DB_PORT": "4000",
+    "DB_USERNAME": "wDZAnfJi6zrXig2.root",
+    "DB_PASSWORD": "fO8354Ch9CuQfFYm",
+    "DB_DATABASE": "test"
   }
 }
